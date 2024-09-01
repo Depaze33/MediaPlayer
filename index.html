@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="style.css" rel="stylesheet" />
+    <link href="small.css" rel="stylesheet" media="only screen and (min-width: 600px) and (max-width: 768px )" />
+    <link href="medium.css" rel="stylesheet" media="only screen and (min-width: 768px) and (max-width : 976px )" />
+    <link href="large.css" rel="stylesheet" media="only screen and (min-width: 976px) and (max-width: 1224px)" />
+    <link rel="icon" href="img/icons8-music.svg">
+
+    <title>Media Player</title>
+</head>
+<section class="allContainer">
+
+    <header class="header">
+        <h1>Acceuil</h1>
+        <div id="serach"></div>
+        <input type="search" name="search" id="search">
+        <nav class="navigation">
+            <button id="artist">Acceuil</button>
+            <button id="music">Favoris</button>
+        </nav>
+    </header>
+    <main>
+        <section class="containairPrincipal">
+            <section class="recentListening">
+
+            </section>
+
+            <section class="cardMusic">
+                <article class="music" id="music1">
+                    <img src="img/couleur.jpg" alt="Cover  couleur - dub inc " class="coverMusic">
+                    <h2 class="titleMusic">Couleur</h2>
+                    <p class="artist">Dub Inc</p>
+                </article>
+                <article class="music" id="music2">
+                    <img src="img/dansLesYeux.jpg" alt="Cover dans les yeux - Sopico" class="coverMusic">
+                    <h2 class="titleMusic">Dans les Yeux</h2>
+                    <p class="artist">Sopico</p>
+                </article>
+                <article class="music" id="music3">
+                    <img src="img/ellePleut.jpg" alt="Cover Elle pleut - Nekfeu" class="coverMusic">
+                    <h2 class="titleMusic">Elle pleut</h2>
+                    <p class="artist">Nekfeu</p>
+                </article>
+                <article class="music" id="music4">
+                    <img src="img/inTheEnd.jpg" alt="Cover in the End - Linkin Park" class="coverMusic">
+                    <h2 class="titleMusic">In the End</h2>
+                    <p class="artist">Link Park</p>
+                </article>
+                <article class="music" id="music5">
+                    <img src="img/jaccuse.jpg" alt="Cover J'accuse - Damien Saez" class="coverMusic">
+                    <h2 class="titleMusic">J'accuse</h2>
+                    <p class="artist">Damien Saez</p>
+                </article>
+                <article class="music" id="music6">
+                    <img src="img/ladyMelodie.jpg" alt="Cover Lady Melody Tom Frager" class="coverMusic">
+                    <h2 class="titleMusic">Lady Melody</h2>
+                    <p class="artist">Tom Frager</p>
+                </article>
+                <article class="music" id="music7">
+                    <img src="img/laMortAvecToi.jpg" alt="Cover La mort avec toi Gargantua" class="coverMusic">
+                    <h2 class="titleMusic">La mort avec toi</h2>
+                    <p class="artist">Gargantüa</p>
+                </article>
+                <article class="music" id="music8">
+                    <img src="img/eternel.jpg" alt="Cover Eternel Hatik" class="coverMusic">
+                    <h2 class="titleMusic">Eternel</h2>
+                    <p class="artist">Hatik</p>
+                </article>
+                <article class="music" id="music9">
+                    <img src="img/Beautiful-Things.jpg" alt="Cover Beautiful Things Benson Boon" class="coverMusic">
+                    <h2 class="titleMusic">Beautiful Things</h2>
+                    <p class="artist">Benson Boon</p>
+                </article>
+                <article class="music" id="music10">
+                    <img src="img/feu-de-bois.jpg" alt="Cover feu de bois Damso" class="coverMusic">
+                    <h2 class="titleMusic">Feu de bois</h2>
+                    <p class="artist">Damso</p>
+                </article>
+            </section>
+
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <section class="musicPlayer">
+            <article class="musicInformation">
+                <img src="img/1.jpg" alt="">
+                <article class="titleArtisteInformation">
+                    <p id="titlecontroler">La mort avec toi</p>
+                    <p id="artistControler">Gargantua</p>
+                </article>
+            </article>
+            <section class="musicControler">
+                <div class="buttonSliderMusic">
+                    <div class="buttonControl">
+                        <button class="prevNext" id="previous"><img src="logo/previous-svgrepo-com.svg" alt=""></button>
+                        <button id="play"><img src="logo/play-button.svg" alt=""></button>
+                        <button class="prevNext" id="next"><img src="logo/next-svgrepo-com.svg" alt=""></button>
+                    </div>
+                    <input id="rangeMusic" class="range" type="range">
+                </div>
+                <div class="volControler">
+                    <img src="logo/volume-min-svgrepo-com.svg" alt="">
+                    <input type="range" name="volume" id="rangeVolume">
+                </div>
+            </section>
+        </section>
+    </footer>
+</section>
+
+<body>
+    <script src="script.js"></script>
+</body>
+
+</html>
